@@ -1,0 +1,15 @@
+{
+  "name": "gidy-profile",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Full-stack Gidy profile replica built with MERN + TypeScript",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "server": "npm run dev --prefix server",
+    "client": "npm run dev --prefix client",
+    "build": "npm run build --prefix server && npm run build --prefix client"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
